@@ -1,0 +1,58 @@
+1. Formulario de Registro de Empleado
+•	Propósito: Registrar nuevos empleados con datos personales y laborales.
+•	Campos: Nombre, apellido, fecha de nacimiento, dirección, email, teléfono, fecha de contratación, supervisor (lista desplegable), departamento (lista desplegable), cargo (lista desplegable).
+•	Relaciones: departamento_id, supervisor_id, cargo_id.
+________________________________________
+2. Formulario de Gestión de Departamentos
+•	Propósito: Crear o editar departamentos y asignar gerentes.
+•	Campos: Nombre del departamento, descripción, gerente (lista desplegable de empleados).
+•	Relaciones: gerente_id (empleado existente).
+________________________________________
+3. Formulario de Cargos y Salarios
+•	Propósito: Definir cargos, rangos salariales y asociarlos a departamentos.
+•	Campos: Título del cargo, descripción, salario base, rango salarial, departamento (lista desplegable).
+•	Relaciones: departamento_id.
+________________________________________
+4. Formulario de Contratos Laborales
+•	Propósito: Gestionar contratos de empleados (temporal, indefinido, etc.).
+•	Campos: Empleado (lista desplegable), fechas de inicio/fin, tipo de contrato, condiciones.
+•	Relaciones: empleado_id.
+________________________________________
+5. Formulario de Habilidades y Certificaciones
+•	Propósito: Registrar habilidades/certificaciones y asignarlas a empleados.
+•	Campos: Nombre de la habilidad, descripción, tipo, institución emisora, fecha de obtención.
+•	Relaciones: Tabla puente Empleado_Habilidad.
+________________________________________
+6. Formulario de Capacitaciones
+•	Propósito: Programar capacitaciones y asignarlas a empleados.
+•	Campos: Nombre de la capacitación, descripción, duración, proveedor, fechas de inicio/completación, estado (en progreso, completada).
+•	Relaciones: Tabla puente Empleado_Capacitacion.
+________________________________________
+7. Formulario de Solicitud de Permisos
+•	Propósito: Gestionar permisos o licencias de empleados (vacaciones, médicos, etc.).
+•	Campos: Empleado (lista desplegable), tipo de permiso, fechas de inicio/fin, estado (aprobado/rechazado), comentarios.
+________________________________________
+8. Formulario de Evaluación de Desempeño
+•	Propósito: Realizar evaluaciones periódicas de empleados.
+•	Campos: Empleado evaluado (lista desplegable), evaluador (lista desplegable de supervisores), fecha, calificación, comentarios.
+________________________________________
+9. Formulario de Asignación de Supervisor
+•	Propósito: Asignar o cambiar el supervisor de un empleado.
+•	Campos: Empleado (lista desplegable), nuevo supervisor (lista desplegable filtrada por departamento).
+________________________________________
+10. Formulario de Búsqueda de Empleados
+•	Propósito: Buscar empleados por nombre, departamento, cargo o habilidades.
+•	Filtros: Nombre/apellido, departamento, cargo, habilidades, estado de contratación.
+________________________________________
+11. Formulario de Reportes Departamentales
+•	Propósito: Generar reportes de nómina, desempeño o capacitaciones por departamento.
+•	Campos: Departamento (lista desplegable), período de tiempo, tipo de reporte (salarios, evaluaciones, etc.).
+________________________________________
+
+12. Formulario de Alertas de Contratos
+•	Propósito: Notificar contratos próximos a vencer.
+•	Campos: Filtro por fecha de vencimiento, estado del contrato.
+________________________________________
+13. Formulario de Perfil del Empleado
+•	Propósito: Visualizar/editar el perfil completo de un empleado (datos personales, contratos, habilidades, evaluaciones).
+•	Integración: Muestra información de múltiples tablas (Empleado, Contrato, Empleado_Habilidad, Evaluacion_Desempeno).
