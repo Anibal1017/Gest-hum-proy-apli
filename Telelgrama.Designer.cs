@@ -1,6 +1,6 @@
 ﻿namespace gestor_de_rh01
 {
-    partial class Telelgrama
+    partial class teleg21
     {
         /// <summary>
         /// Required designer variable.
@@ -28,24 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Telelgrama));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(teleg21));
             panel6 = new Panel();
-            maskedTextBox1 = new MaskedTextBox();
+            panel7 = new Panel();
+            radioButton4 = new RadioButton();
+            radioButton1 = new RadioButton();
+            radioButton3 = new RadioButton();
+            radioButton2 = new RadioButton();
+            label7 = new Label();
+            txtFechat = new MaskedTextBox();
             label8 = new Label();
-            textBox5 = new TextBox();
+            txtCedt = new TextBox();
             label5 = new Label();
-            textBox3 = new TextBox();
+            txtJlabt = new TextBox();
             label3 = new Label();
-            textBox2 = new TextBox();
+            txtLugTrabt = new TextBox();
             label2 = new Label();
-            textBox1 = new TextBox();
+            txtNomt = new TextBox();
             label1 = new Label();
             button10 = new Button();
             button3 = new Button();
-            button1 = new Button();
-            button2 = new Button();
-            textBox4 = new TextBox();
+            btnguar = new Button();
+            a = new Button();
+            txtStdge = new TextBox();
             label4 = new Label();
+            label6 = new Label();
+            dgvGestor = new DataGridView();
             MenuVertical = new Panel();
             button7 = new Button();
             button4 = new Button();
@@ -60,60 +68,115 @@
             button9 = new Button();
             panel1 = new Panel();
             pictureBox1 = new PictureBox();
-            label6 = new Label();
-            dataGridView1 = new DataGridView();
-            Column6 = new DataGridViewTextBoxColumn();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewTextBoxColumn();
-            Column4 = new DataGridViewTextBoxColumn();
-            Column5 = new DataGridViewTextBoxColumn();
-            label7 = new Label();
-            radioButton1 = new RadioButton();
-            radioButton2 = new RadioButton();
-            radioButton3 = new RadioButton();
-            radioButton4 = new RadioButton();
-            panel7 = new Panel();
             panel6.SuspendLayout();
+            panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvGestor).BeginInit();
             MenuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            panel7.SuspendLayout();
             SuspendLayout();
             // 
             // panel6
             // 
             panel6.Controls.Add(panel7);
             panel6.Controls.Add(label7);
-            panel6.Controls.Add(maskedTextBox1);
+            panel6.Controls.Add(txtFechat);
             panel6.Controls.Add(label8);
-            panel6.Controls.Add(textBox5);
+            panel6.Controls.Add(txtCedt);
             panel6.Controls.Add(label5);
-            panel6.Controls.Add(textBox3);
+            panel6.Controls.Add(txtJlabt);
             panel6.Controls.Add(label3);
-            panel6.Controls.Add(textBox2);
+            panel6.Controls.Add(txtLugTrabt);
             panel6.Controls.Add(label2);
-            panel6.Controls.Add(textBox1);
+            panel6.Controls.Add(txtNomt);
             panel6.Controls.Add(label1);
             panel6.Controls.Add(button10);
             panel6.Controls.Add(button3);
-            panel6.Controls.Add(button1);
-            panel6.Controls.Add(button2);
-            panel6.Controls.Add(textBox4);
+            panel6.Controls.Add(btnguar);
+            panel6.Controls.Add(a);
+            panel6.Controls.Add(txtStdge);
             panel6.Controls.Add(label4);
             panel6.Location = new Point(125, 49);
             panel6.Name = "panel6";
             panel6.Size = new Size(913, 379);
             panel6.TabIndex = 19;
             // 
-            // maskedTextBox1
+            // panel7
             // 
-            maskedTextBox1.Location = new Point(356, 259);
-            maskedTextBox1.Mask = "00/00/0000";
-            maskedTextBox1.Name = "maskedTextBox1";
-            maskedTextBox1.Size = new Size(224, 27);
-            maskedTextBox1.TabIndex = 31;
-            maskedTextBox1.ValidatingType = typeof(DateTime);
+            panel7.Controls.Add(radioButton4);
+            panel7.Controls.Add(radioButton1);
+            panel7.Controls.Add(radioButton3);
+            panel7.Controls.Add(radioButton2);
+            panel7.Location = new Point(661, 79);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(178, 174);
+            panel7.TabIndex = 37;
+            // 
+            // radioButton4
+            // 
+            radioButton4.AutoSize = true;
+            radioButton4.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            radioButton4.Location = new Point(31, 128);
+            radioButton4.Name = "radioButton4";
+            radioButton4.Size = new Size(126, 27);
+            radioButton4.TabIndex = 36;
+            radioButton4.TabStop = true;
+            radioButton4.Text = "EXTENDIDA";
+            radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            radioButton1.AutoSize = true;
+            radioButton1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            radioButton1.Location = new Point(31, 56);
+            radioButton1.Name = "radioButton1";
+            radioButton1.Size = new Size(131, 27);
+            radioButton1.TabIndex = 33;
+            radioButton1.TabStop = true;
+            radioButton1.Text = "VESPERTINA";
+            radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            radioButton3.AutoSize = true;
+            radioButton3.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            radioButton3.Location = new Point(31, 94);
+            radioButton3.Name = "radioButton3";
+            radioButton3.Size = new Size(115, 27);
+            radioButton3.TabIndex = 35;
+            radioButton3.TabStop = true;
+            radioButton3.Text = "NOCTUNA";
+            radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            radioButton2.AutoSize = true;
+            radioButton2.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            radioButton2.Location = new Point(31, 16);
+            radioButton2.Name = "radioButton2";
+            radioButton2.Size = new Size(120, 27);
+            radioButton2.TabIndex = 34;
+            radioButton2.TabStop = true;
+            radioButton2.Text = "MATUTINA";
+            radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
+            label7.Location = new Point(661, 40);
+            label7.Name = "label7";
+            label7.Size = new Size(174, 23);
+            label7.TabIndex = 32;
+            label7.Text = "JORNADA LABORAL";
+            // 
+            // txtFechat
+            // 
+            txtFechat.Location = new Point(356, 259);
+            txtFechat.Mask = "00/00/0000";
+            txtFechat.Name = "txtFechat";
+            txtFechat.Size = new Size(224, 27);
+            txtFechat.TabIndex = 31;
+            txtFechat.ValidatingType = typeof(DateTime);
             // 
             // label8
             // 
@@ -125,12 +188,12 @@
             label8.TabIndex = 29;
             label8.Text = "FECHA";
             // 
-            // textBox5
+            // txtCedt
             // 
-            textBox5.Location = new Point(50, 259);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(245, 27);
-            textBox5.TabIndex = 26;
+            txtCedt.Location = new Point(50, 259);
+            txtCedt.Name = "txtCedt";
+            txtCedt.Size = new Size(245, 27);
+            txtCedt.TabIndex = 26;
             // 
             // label5
             // 
@@ -142,12 +205,12 @@
             label5.TabIndex = 25;
             label5.Text = "CEDULA";
             // 
-            // textBox3
+            // txtJlabt
             // 
-            textBox3.Location = new Point(356, 165);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(264, 27);
-            textBox3.TabIndex = 24;
+            txtJlabt.Location = new Point(356, 165);
+            txtJlabt.Name = "txtJlabt";
+            txtJlabt.Size = new Size(264, 27);
+            txtJlabt.TabIndex = 24;
             // 
             // label3
             // 
@@ -159,12 +222,12 @@
             label3.TabIndex = 23;
             label3.Text = "JORNADA LABORAL";
             // 
-            // textBox2
+            // txtLugTrabt
             // 
-            textBox2.Location = new Point(356, 79);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(264, 27);
-            textBox2.TabIndex = 22;
+            txtLugTrabt.Location = new Point(356, 79);
+            txtLugTrabt.Name = "txtLugTrabt";
+            txtLugTrabt.Size = new Size(264, 27);
+            txtLugTrabt.TabIndex = 22;
             // 
             // label2
             // 
@@ -176,12 +239,12 @@
             label2.TabIndex = 21;
             label2.Text = "LUGAR DONDE TRABAJA";
             // 
-            // textBox1
+            // txtNomt
             // 
-            textBox1.Location = new Point(50, 165);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(245, 27);
-            textBox1.TabIndex = 20;
+            txtNomt.Location = new Point(50, 165);
+            txtNomt.Name = "txtNomt";
+            txtNomt.Size = new Size(245, 27);
+            txtNomt.TabIndex = 20;
             // 
             // label1
             // 
@@ -211,30 +274,31 @@
             button3.Text = "Cancelar";
             button3.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnguar
             // 
-            button1.Location = new Point(661, 313);
-            button1.Name = "button1";
-            button1.Size = new Size(111, 55);
-            button1.TabIndex = 10;
-            button1.Text = "Guardar";
-            button1.UseVisualStyleBackColor = true;
+            btnguar.Location = new Point(661, 313);
+            btnguar.Name = "btnguar";
+            btnguar.Size = new Size(111, 55);
+            btnguar.TabIndex = 10;
+            btnguar.Text = "Guardar";
+            btnguar.UseVisualStyleBackColor = true;
+            btnguar.Click += btnguar_Click;
             // 
-            // button2
+            // a
             // 
-            button2.Location = new Point(544, 313);
-            button2.Name = "button2";
-            button2.Size = new Size(111, 55);
-            button2.TabIndex = 11;
-            button2.Text = "Borrar";
-            button2.UseVisualStyleBackColor = true;
+            a.Location = new Point(544, 313);
+            a.Name = "a";
+            a.Size = new Size(111, 55);
+            a.TabIndex = 11;
+            a.Text = "Borrar";
+            a.UseVisualStyleBackColor = true;
             // 
-            // textBox4
+            // txtStdge
             // 
-            textBox4.Location = new Point(50, 79);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(245, 27);
-            textBox4.TabIndex = 9;
+            txtStdge.Location = new Point(50, 79);
+            txtStdge.Name = "txtStdge";
+            txtStdge.Size = new Size(245, 27);
+            txtStdge.TabIndex = 9;
             // 
             // label4
             // 
@@ -245,6 +309,25 @@
             label4.Size = new Size(64, 23);
             label4.TabIndex = 8;
             label4.Text = "STDGE";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Showcard Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label6.Location = new Point(125, 9);
+            label6.Name = "label6";
+            label6.Size = new Size(188, 37);
+            label6.TabIndex = 18;
+            label6.Text = "Telegrama";
+            // 
+            // dgvGestor
+            // 
+            dgvGestor.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvGestor.Location = new Point(125, 438);
+            dgvGestor.Name = "dgvGestor";
+            dgvGestor.RowHeadersWidth = 51;
+            dgvGestor.Size = new Size(913, 252);
+            dgvGestor.TabIndex = 20;
             // 
             // MenuVertical
             // 
@@ -267,7 +350,7 @@
             MenuVertical.Margin = new Padding(4, 5, 4, 5);
             MenuVertical.Name = "MenuVertical";
             MenuVertical.Size = new Size(70, 702);
-            MenuVertical.TabIndex = 17;
+            MenuVertical.TabIndex = 21;
             // 
             // button7
             // 
@@ -285,6 +368,7 @@
             button7.Size = new Size(60, 49);
             button7.TabIndex = 23;
             button7.UseVisualStyleBackColor = false;
+            button7.Click += button7_Click;
             // 
             // button4
             // 
@@ -302,6 +386,7 @@
             button4.Size = new Size(59, 49);
             button4.TabIndex = 21;
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // panel5
             // 
@@ -337,6 +422,7 @@
             button5.Size = new Size(61, 49);
             button5.TabIndex = 9;
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click_1;
             // 
             // panel4
             // 
@@ -363,6 +449,7 @@
             button6.Size = new Size(61, 49);
             button6.TabIndex = 7;
             button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // panel3
             // 
@@ -389,6 +476,7 @@
             button8.Size = new Size(61, 49);
             button8.TabIndex = 5;
             button8.UseVisualStyleBackColor = false;
+            button8.Click += button8_Click_1;
             // 
             // panel2
             // 
@@ -415,6 +503,7 @@
             button9.Size = new Size(61, 49);
             button9.TabIndex = 3;
             button9.UseVisualStyleBackColor = false;
+            button9.Click += button9_Click;
             // 
             // panel1
             // 
@@ -436,155 +525,24 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Showcard Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.Location = new Point(125, 9);
-            label6.Name = "label6";
-            label6.Size = new Size(239, 37);
-            label6.TabIndex = 18;
-            label6.Text = "Certificacion";
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column6, Column1, Column2, Column3, Column4, Column5 });
-            dataGridView1.Location = new Point(125, 438);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(913, 252);
-            dataGridView1.TabIndex = 20;
-            // 
-            // Column6
-            // 
-            Column6.HeaderText = "STDGE";
-            Column6.MinimumWidth = 6;
-            Column6.Name = "Column6";
-            Column6.Width = 125;
-            // 
-            // Column1
-            // 
-            Column1.HeaderText = "Nombre";
-            Column1.MinimumWidth = 6;
-            Column1.Name = "Column1";
-            Column1.Width = 125;
-            // 
-            // Column2
-            // 
-            Column2.HeaderText = "cedula";
-            Column2.MinimumWidth = 6;
-            Column2.Name = "Column2";
-            Column2.Width = 125;
-            // 
-            // Column3
-            // 
-            Column3.HeaderText = "Lugar donde trabaja";
-            Column3.MinimumWidth = 6;
-            Column3.Name = "Column3";
-            Column3.Width = 125;
-            // 
-            // Column4
-            // 
-            Column4.HeaderText = "Jornada laboral";
-            Column4.MinimumWidth = 6;
-            Column4.Name = "Column4";
-            Column4.Width = 125;
-            // 
-            // Column5
-            // 
-            Column5.HeaderText = "Fecha";
-            Column5.MinimumWidth = 6;
-            Column5.Name = "Column5";
-            Column5.Width = 125;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            label7.Location = new Point(661, 40);
-            label7.Name = "label7";
-            label7.Size = new Size(174, 23);
-            label7.TabIndex = 32;
-            label7.Text = "JORNADA LABORAL";
-            // 
-            // radioButton1
-            // 
-            radioButton1.AutoSize = true;
-            radioButton1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            radioButton1.Location = new Point(31, 56);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(131, 27);
-            radioButton1.TabIndex = 33;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "VESPERTINA";
-            radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            radioButton2.AutoSize = true;
-            radioButton2.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            radioButton2.Location = new Point(31, 16);
-            radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(120, 27);
-            radioButton2.TabIndex = 34;
-            radioButton2.TabStop = true;
-            radioButton2.Text = "MATUTINA";
-            radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            radioButton3.AutoSize = true;
-            radioButton3.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            radioButton3.Location = new Point(31, 94);
-            radioButton3.Name = "radioButton3";
-            radioButton3.Size = new Size(115, 27);
-            radioButton3.TabIndex = 35;
-            radioButton3.TabStop = true;
-            radioButton3.Text = "NOCTUNA";
-            radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton4
-            // 
-            radioButton4.AutoSize = true;
-            radioButton4.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            radioButton4.Location = new Point(31, 128);
-            radioButton4.Name = "radioButton4";
-            radioButton4.Size = new Size(126, 27);
-            radioButton4.TabIndex = 36;
-            radioButton4.TabStop = true;
-            radioButton4.Text = "EXTENDIDA";
-            radioButton4.UseVisualStyleBackColor = true;
-            // 
-            // panel7
-            // 
-            panel7.Controls.Add(radioButton4);
-            panel7.Controls.Add(radioButton1);
-            panel7.Controls.Add(radioButton3);
-            panel7.Controls.Add(radioButton2);
-            panel7.Location = new Point(661, 79);
-            panel7.Name = "panel7";
-            panel7.Size = new Size(178, 174);
-            panel7.TabIndex = 37;
-            // 
-            // Telelgrama
+            // teleg21
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1074, 702);
-            Controls.Add(dataGridView1);
-            Controls.Add(panel6);
             Controls.Add(MenuVertical);
+            Controls.Add(dgvGestor);
+            Controls.Add(panel6);
             Controls.Add(label6);
-            Name = "Telelgrama";
-            Text = "Telelgrama";
+            Name = "teleg21";
+            Text = "Telegrama";
             panel6.ResumeLayout(false);
             panel6.PerformLayout();
-            MenuVertical.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             panel7.ResumeLayout(false);
             panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvGestor).EndInit();
+            MenuVertical.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -592,22 +550,30 @@
         #endregion
 
         private Panel panel6;
-        private MaskedTextBox maskedTextBox1;
+        private MaskedTextBox txtFechat;
         private Label label8;
-        private TextBox textBox5;
+        private TextBox txtCedt;
         private Label label5;
-        private TextBox textBox3;
+        private TextBox txtJlabt;
         private Label label3;
-        private TextBox textBox2;
+        private TextBox txtLugTrabt;
         private Label label2;
-        private TextBox textBox1;
+        private TextBox txtNomt;
         private Label label1;
         private Button button10;
         private Button button3;
-        private Button button1;
-        private Button button2;
-        private TextBox textBox4;
+        private Button btnguar;
+        private Button a;
+        private TextBox txtStdge;
         private Label label4;
+        private Label label6;
+        private DataGridView dgvGestor;
+        private RadioButton radioButton1;
+        private Label label7;
+        private RadioButton radioButton4;
+        private RadioButton radioButton3;
+        private RadioButton radioButton2;
+        private Panel panel7;
         private Panel MenuVertical;
         private Button button7;
         private Button button4;
@@ -622,19 +588,5 @@
         private Button button9;
         private Panel panel1;
         private PictureBox pictureBox1;
-        private Label label6;
-        private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn Column6;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column2;
-        private DataGridViewTextBoxColumn Column3;
-        private DataGridViewTextBoxColumn Column4;
-        private DataGridViewTextBoxColumn Column5;
-        private RadioButton radioButton1;
-        private Label label7;
-        private RadioButton radioButton4;
-        private RadioButton radioButton3;
-        private RadioButton radioButton2;
-        private Panel panel7;
     }
 }

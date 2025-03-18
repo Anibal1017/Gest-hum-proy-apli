@@ -1,6 +1,0 @@
-agregar complementos 
-
-Office(hay dos que necesita de office instalado y otro que no necesita esto)
-sql server o lite
-
-

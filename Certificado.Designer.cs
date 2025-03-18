@@ -29,6 +29,29 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Certificado));
+            panel6 = new Panel();
+            FechatextBox = new MaskedTextBox();
+            label9 = new Label();
+            aserv = new TextBox();
+            cedulatextBox = new MaskedTextBox();
+            btnguardardoc = new Button();
+            maskedTextBox1 = new MaskedTextBox();
+            label8 = new Label();
+            SubtextBox = new TextBox();
+            label7 = new Label();
+            ltrabtextBox = new TextBox();
+            label5 = new Label();
+            CargotextBox = new TextBox();
+            label3 = new Label();
+            label2 = new Label();
+            label1 = new Label();
+            btnimprimir = new Button();
+            button3 = new Button();
+            btnborrar = new Button();
+            nombretextBox = new TextBox();
+            label4 = new Label();
+            label6 = new Label();
+            dgvGestor = new DataGridView();
             MenuVertical = new Panel();
             button7 = new Button();
             button4 = new Button();
@@ -42,40 +65,257 @@
             panel2 = new Panel();
             button9 = new Button();
             panel1 = new Panel();
-            pictureBox1 = new PictureBox();
-            panel6 = new Panel();
-            button10 = new Button();
-            label6 = new Label();
-            button3 = new Button();
-            button1 = new Button();
-            button2 = new Button();
-            textBox4 = new TextBox();
-            label4 = new Label();
-            dataGridView1 = new DataGridView();
-            textBox1 = new TextBox();
-            label1 = new Label();
-            textBox2 = new TextBox();
-            label2 = new Label();
-            textBox3 = new TextBox();
-            label3 = new Label();
-            textBox5 = new TextBox();
-            label5 = new Label();
-            textBox6 = new TextBox();
-            label7 = new Label();
-            label8 = new Label();
-            maskedTextBox1 = new MaskedTextBox();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewTextBoxColumn();
-            Column4 = new DataGridViewTextBoxColumn();
-            Column5 = new DataGridViewTextBoxColumn();
-            Column6 = new DataGridViewTextBoxColumn();
-            Column7 = new DataGridViewTextBoxColumn();
-            MenuVertical.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            gpanel1 = new Class.gpanel();
             panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvGestor).BeginInit();
+            MenuVertical.SuspendLayout();
+            gpanel1.SuspendLayout();
             SuspendLayout();
+            // 
+            // panel6
+            // 
+            panel6.BackColor = Color.LightGreen;
+            panel6.Controls.Add(FechatextBox);
+            panel6.Controls.Add(label9);
+            panel6.Controls.Add(aserv);
+            panel6.Controls.Add(cedulatextBox);
+            panel6.Controls.Add(btnguardardoc);
+            panel6.Controls.Add(maskedTextBox1);
+            panel6.Controls.Add(label8);
+            panel6.Controls.Add(SubtextBox);
+            panel6.Controls.Add(label7);
+            panel6.Controls.Add(ltrabtextBox);
+            panel6.Controls.Add(label5);
+            panel6.Controls.Add(CargotextBox);
+            panel6.Controls.Add(label3);
+            panel6.Controls.Add(label2);
+            panel6.Controls.Add(label1);
+            panel6.Controls.Add(btnimprimir);
+            panel6.Controls.Add(button3);
+            panel6.Controls.Add(btnborrar);
+            panel6.Controls.Add(nombretextBox);
+            panel6.Controls.Add(label4);
+            panel6.Location = new Point(87, 72);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(936, 392);
+            panel6.TabIndex = 16;
+            // 
+            // FechatextBox
+            // 
+            FechatextBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            FechatextBox.Location = new Point(283, 82);
+            FechatextBox.Mask = "00/00/0000";
+            FechatextBox.Name = "FechatextBox";
+            FechatextBox.Size = new Size(222, 34);
+            FechatextBox.TabIndex = 36;
+            FechatextBox.ValidatingType = typeof(DateTime);
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Showcard Gothic", 12F, FontStyle.Bold);
+            label9.Location = new Point(564, 134);
+            label9.Name = "label9";
+            label9.Size = new Size(212, 26);
+            label9.TabIndex = 35;
+            label9.Text = "Años de Servicios";
+            // 
+            // aserv
+            // 
+            aserv.Font = new Font("Segoe UI", 12F);
+            aserv.Location = new Point(583, 165);
+            aserv.Name = "aserv";
+            aserv.Size = new Size(101, 34);
+            aserv.TabIndex = 34;
+            // 
+            // cedulatextBox
+            // 
+            cedulatextBox.Font = new Font("Segoe UI", 12F);
+            cedulatextBox.Location = new Point(3, 165);
+            cedulatextBox.Mask = "000-0000000-0";
+            cedulatextBox.Name = "cedulatextBox";
+            cedulatextBox.Size = new Size(245, 34);
+            cedulatextBox.TabIndex = 33;
+            // 
+            // btnguardardoc
+            // 
+            btnguardardoc.BackColor = Color.LightYellow;
+            btnguardardoc.FlatStyle = FlatStyle.Popup;
+            btnguardardoc.Location = new Point(683, 324);
+            btnguardardoc.Name = "btnguardardoc";
+            btnguardardoc.Size = new Size(111, 55);
+            btnguardardoc.TabIndex = 32;
+            btnguardardoc.Text = "Guardar";
+            btnguardardoc.UseVisualStyleBackColor = false;
+            btnguardardoc.Click += btnguardardoc_Click;
+            // 
+            // maskedTextBox1
+            // 
+            maskedTextBox1.Font = new Font("Segoe UI", 12F);
+            maskedTextBox1.Location = new Point(564, 79);
+            maskedTextBox1.Mask = "00/00/0000";
+            maskedTextBox1.Name = "maskedTextBox1";
+            maskedTextBox1.Size = new Size(224, 34);
+            maskedTextBox1.TabIndex = 31;
+            maskedTextBox1.ValidatingType = typeof(DateTime);
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Showcard Gothic", 12F, FontStyle.Bold);
+            label8.Location = new Point(564, 40);
+            label8.Name = "label8";
+            label8.Size = new Size(260, 26);
+            label8.TabIndex = 29;
+            label8.Text = "Fecha de la solicitud";
+            // 
+            // SubtextBox
+            // 
+            SubtextBox.Font = new Font("Segoe UI", 12F);
+            SubtextBox.Location = new Point(283, 259);
+            SubtextBox.Name = "SubtextBox";
+            SubtextBox.Size = new Size(259, 34);
+            SubtextBox.TabIndex = 28;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Showcard Gothic", 12F, FontStyle.Bold);
+            label7.Location = new Point(283, 219);
+            label7.Name = "label7";
+            label7.Size = new Size(173, 26);
+            label7.TabIndex = 27;
+            label7.Text = "Sueldo Bruto";
+            // 
+            // ltrabtextBox
+            // 
+            ltrabtextBox.Font = new Font("Segoe UI", 12F);
+            ltrabtextBox.Location = new Point(3, 259);
+            ltrabtextBox.Name = "ltrabtextBox";
+            ltrabtextBox.Size = new Size(245, 34);
+            ltrabtextBox.TabIndex = 26;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Showcard Gothic", 12F, FontStyle.Bold);
+            label5.Location = new Point(3, 219);
+            label5.Name = "label5";
+            label5.Size = new Size(215, 26);
+            label5.TabIndex = 25;
+            label5.Text = "Lugar de Trabajo";
+            // 
+            // CargotextBox
+            // 
+            CargotextBox.Font = new Font("Segoe UI", 12F);
+            CargotextBox.Location = new Point(283, 165);
+            CargotextBox.Name = "CargotextBox";
+            CargotextBox.Size = new Size(264, 34);
+            CargotextBox.TabIndex = 24;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Showcard Gothic", 12F, FontStyle.Bold);
+            label3.Location = new Point(283, 134);
+            label3.Name = "label3";
+            label3.Size = new Size(84, 26);
+            label3.TabIndex = 23;
+            label3.Text = "Cargo";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Showcard Gothic", 12F, FontStyle.Bold);
+            label2.Location = new Point(278, 40);
+            label2.Name = "label2";
+            label2.Size = new Size(227, 26);
+            label2.TabIndex = 21;
+            label2.Text = "TIEMPO EN SERVICIO";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Showcard Gothic", 12F, FontStyle.Bold);
+            label1.Location = new Point(3, 134);
+            label1.Name = "label1";
+            label1.Size = new Size(93, 26);
+            label1.TabIndex = 19;
+            label1.Text = "Cedula";
+            // 
+            // btnimprimir
+            // 
+            btnimprimir.BackColor = Color.LightYellow;
+            btnimprimir.FlatStyle = FlatStyle.Popup;
+            btnimprimir.Location = new Point(801, 324);
+            btnimprimir.Name = "btnimprimir";
+            btnimprimir.Size = new Size(111, 55);
+            btnimprimir.TabIndex = 18;
+            btnimprimir.Text = "Imprimir";
+            btnimprimir.UseVisualStyleBackColor = false;
+            btnimprimir.Click += btnimprimir_Click;
+            // 
+            // button3
+            // 
+            button3.BackColor = Color.LightYellow;
+            button3.FlatStyle = FlatStyle.Popup;
+            button3.Location = new Point(449, 324);
+            button3.Name = "button3";
+            button3.Size = new Size(111, 55);
+            button3.TabIndex = 12;
+            button3.Text = "Cancelar";
+            button3.UseVisualStyleBackColor = false;
+            // 
+            // btnborrar
+            // 
+            btnborrar.BackColor = Color.LightYellow;
+            btnborrar.FlatStyle = FlatStyle.Popup;
+            btnborrar.Location = new Point(566, 324);
+            btnborrar.Name = "btnborrar";
+            btnborrar.Size = new Size(111, 55);
+            btnborrar.TabIndex = 11;
+            btnborrar.Text = "Borrar";
+            btnborrar.UseVisualStyleBackColor = false;
+            btnborrar.Click += btnborrar_Click;
+            // 
+            // nombretextBox
+            // 
+            nombretextBox.Font = new Font("Segoe UI", 12F);
+            nombretextBox.Location = new Point(3, 79);
+            nombretextBox.Name = "nombretextBox";
+            nombretextBox.Size = new Size(245, 34);
+            nombretextBox.TabIndex = 9;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Showcard Gothic", 12F, FontStyle.Bold);
+            label4.Location = new Point(3, 40);
+            label4.Name = "label4";
+            label4.Size = new Size(101, 26);
+            label4.TabIndex = 8;
+            label4.Text = "Nombre";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.LightGreen;
+            label6.Font = new Font("Showcard Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label6.Location = new Point(87, 32);
+            label6.Name = "label6";
+            label6.Size = new Size(239, 37);
+            label6.TabIndex = 15;
+            label6.Text = "Certificacion";
+            // 
+            // dgvGestor
+            // 
+            dgvGestor.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvGestor.Location = new Point(87, 479);
+            dgvGestor.Name = "dgvGestor";
+            dgvGestor.RowHeadersWidth = 51;
+            dgvGestor.Size = new Size(946, 201);
+            dgvGestor.TabIndex = 17;
+            dgvGestor.MouseClick += dgvGestor_MouseClick;
             // 
             // MenuVertical
             // 
@@ -92,13 +332,12 @@
             MenuVertical.Controls.Add(panel2);
             MenuVertical.Controls.Add(button9);
             MenuVertical.Controls.Add(panel1);
-            MenuVertical.Controls.Add(pictureBox1);
             MenuVertical.Dock = DockStyle.Left;
             MenuVertical.Location = new Point(0, 0);
             MenuVertical.Margin = new Padding(4, 5, 4, 5);
             MenuVertical.Name = "MenuVertical";
-            MenuVertical.Size = new Size(70, 742);
-            MenuVertical.TabIndex = 14;
+            MenuVertical.Size = new Size(70, 699);
+            MenuVertical.TabIndex = 18;
             // 
             // button7
             // 
@@ -116,6 +355,7 @@
             button7.Size = new Size(60, 49);
             button7.TabIndex = 23;
             button7.UseVisualStyleBackColor = false;
+            button7.Click += button7_Click_1;
             // 
             // button4
             // 
@@ -133,6 +373,7 @@
             button4.Size = new Size(59, 49);
             button4.TabIndex = 21;
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click_1;
             // 
             // panel5
             // 
@@ -168,6 +409,7 @@
             button5.Size = new Size(61, 49);
             button5.TabIndex = 9;
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click_1;
             // 
             // panel4
             // 
@@ -194,6 +436,7 @@
             button6.Size = new Size(61, 49);
             button6.TabIndex = 7;
             button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click_1;
             // 
             // panel3
             // 
@@ -220,6 +463,7 @@
             button8.Size = new Size(61, 49);
             button8.TabIndex = 5;
             button8.UseVisualStyleBackColor = false;
+            button8.Click += button8_Click;
             // 
             // panel2
             // 
@@ -246,6 +490,7 @@
             button9.Size = new Size(61, 49);
             button9.TabIndex = 3;
             button9.UseVisualStyleBackColor = false;
+            button9.Click += button9_Click_1;
             // 
             // panel1
             // 
@@ -256,290 +501,62 @@
             panel1.Size = new Size(7, 49);
             panel1.TabIndex = 2;
             // 
-            // pictureBox1
+            // gpanel1
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(16, 32);
-            pictureBox1.Margin = new Padding(4, 5, 4, 5);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(53, 73);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            // 
-            // panel6
-            // 
-            panel6.Controls.Add(maskedTextBox1);
-            panel6.Controls.Add(label8);
-            panel6.Controls.Add(textBox6);
-            panel6.Controls.Add(label7);
-            panel6.Controls.Add(textBox5);
-            panel6.Controls.Add(label5);
-            panel6.Controls.Add(textBox3);
-            panel6.Controls.Add(label3);
-            panel6.Controls.Add(textBox2);
-            panel6.Controls.Add(label2);
-            panel6.Controls.Add(textBox1);
-            panel6.Controls.Add(label1);
-            panel6.Controls.Add(button10);
-            panel6.Controls.Add(button3);
-            panel6.Controls.Add(button1);
-            panel6.Controls.Add(button2);
-            panel6.Controls.Add(textBox4);
-            panel6.Controls.Add(label4);
-            panel6.Location = new Point(87, 72);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(936, 441);
-            panel6.TabIndex = 16;
-            // 
-            // button10
-            // 
-            button10.Location = new Point(666, 366);
-            button10.Name = "button10";
-            button10.Size = new Size(111, 55);
-            button10.TabIndex = 18;
-            button10.Text = "Imprimir";
-            button10.UseVisualStyleBackColor = true;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Showcard Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.Location = new Point(87, 32);
-            label6.Name = "label6";
-            label6.Size = new Size(239, 37);
-            label6.TabIndex = 15;
-            label6.Text = "Certificacion";
-            // 
-            // button3
-            // 
-            button3.Location = new Point(314, 366);
-            button3.Name = "button3";
-            button3.Size = new Size(111, 55);
-            button3.TabIndex = 12;
-            button3.Text = "Cancelar";
-            button3.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(548, 366);
-            button1.Name = "button1";
-            button1.Size = new Size(111, 55);
-            button1.TabIndex = 10;
-            button1.Text = "Guardar";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(431, 366);
-            button2.Name = "button2";
-            button2.Size = new Size(111, 55);
-            button2.TabIndex = 11;
-            button2.Text = "Borrar";
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // textBox4
-            // 
-            textBox4.Location = new Point(50, 79);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(245, 27);
-            textBox4.TabIndex = 9;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            label4.Location = new Point(50, 40);
-            label4.Name = "label4";
-            label4.Size = new Size(76, 23);
-            label4.TabIndex = 8;
-            label4.Text = "Nombre";
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6, Column7 });
-            dataGridView1.Location = new Point(87, 529);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(946, 201);
-            dataGridView1.TabIndex = 17;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(50, 165);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(245, 27);
-            textBox1.TabIndex = 20;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            label1.Location = new Point(50, 125);
-            label1.Name = "label1";
-            label1.Size = new Size(65, 23);
-            label1.TabIndex = 19;
-            label1.Text = "Cedula";
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(356, 79);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(264, 27);
-            textBox2.TabIndex = 22;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            label2.Location = new Point(356, 40);
-            label2.Name = "label2";
-            label2.Size = new Size(234, 23);
-            label2.TabIndex = 21;
-            label2.Text = "Tiempo que presta servicios";
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(356, 165);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(264, 27);
-            textBox3.TabIndex = 24;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            label3.Location = new Point(356, 125);
-            label3.Name = "label3";
-            label3.Size = new Size(58, 23);
-            label3.TabIndex = 23;
-            label3.Text = "Cargo";
-            // 
-            // textBox5
-            // 
-            textBox5.Location = new Point(50, 259);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(245, 27);
-            textBox5.TabIndex = 26;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            label5.Location = new Point(50, 219);
-            label5.Name = "label5";
-            label5.Size = new Size(176, 23);
-            label5.TabIndex = 25;
-            label5.Text = "Lugar donde Trabaja";
-            // 
-            // textBox6
-            // 
-            textBox6.Location = new Point(361, 259);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(259, 27);
-            textBox6.TabIndex = 28;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            label7.Location = new Point(361, 219);
-            label7.Name = "label7";
-            label7.Size = new Size(115, 23);
-            label7.TabIndex = 27;
-            label7.Text = "Sueldo Bruto";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            label8.Location = new Point(666, 40);
-            label8.Name = "label8";
-            label8.Size = new Size(172, 23);
-            label8.TabIndex = 29;
-            label8.Text = "Fecha de la solicitud";
-            // 
-            // maskedTextBox1
-            // 
-            maskedTextBox1.Location = new Point(666, 79);
-            maskedTextBox1.Mask = "00/00/0000";
-            maskedTextBox1.Name = "maskedTextBox1";
-            maskedTextBox1.Size = new Size(224, 27);
-            maskedTextBox1.TabIndex = 31;
-            maskedTextBox1.ValidatingType = typeof(DateTime);
-            // 
-            // Column1
-            // 
-            Column1.HeaderText = "Nombre";
-            Column1.MinimumWidth = 6;
-            Column1.Name = "Column1";
-            Column1.Width = 125;
-            // 
-            // Column2
-            // 
-            Column2.HeaderText = "Cedula";
-            Column2.MinimumWidth = 6;
-            Column2.Name = "Column2";
-            Column2.Width = 125;
-            // 
-            // Column3
-            // 
-            Column3.HeaderText = "Lugar donde trabaja";
-            Column3.MinimumWidth = 6;
-            Column3.Name = "Column3";
-            Column3.Width = 125;
-            // 
-            // Column4
-            // 
-            Column4.HeaderText = "Tiempo que presta servicios";
-            Column4.MinimumWidth = 6;
-            Column4.Name = "Column4";
-            Column4.Width = 125;
-            // 
-            // Column5
-            // 
-            Column5.HeaderText = "cargo";
-            Column5.MinimumWidth = 6;
-            Column5.Name = "Column5";
-            Column5.Width = 125;
-            // 
-            // Column6
-            // 
-            Column6.HeaderText = "Sueldo Bruto";
-            Column6.MinimumWidth = 6;
-            Column6.Name = "Column6";
-            Column6.Width = 125;
-            // 
-            // Column7
-            // 
-            Column7.HeaderText = "Fecha de la solicitud";
-            Column7.MinimumWidth = 6;
-            Column7.Name = "Column7";
-            Column7.Width = 125;
+            gpanel1.ColorBottom = Color.Cornsilk;
+            gpanel1.ColorTop = Color.LightGreen;
+            gpanel1.Controls.Add(dgvGestor);
+            gpanel1.Location = new Point(0, 0);
+            gpanel1.Name = "gpanel1";
+            gpanel1.Size = new Size(1052, 704);
+            gpanel1.TabIndex = 19;
             // 
             // Certificado
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1067, 742);
-            Controls.Add(dataGridView1);
-            Controls.Add(panel6);
+            ClientSize = new Size(1049, 699);
             Controls.Add(MenuVertical);
+            Controls.Add(panel6);
             Controls.Add(label6);
+            Controls.Add(gpanel1);
+            MaximumSize = new Size(1067, 746);
             Name = "Certificado";
             Text = "Certificado";
-            MenuVertical.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel6.ResumeLayout(false);
             panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvGestor).EndInit();
+            MenuVertical.ResumeLayout(false);
+            gpanel1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
+        private Panel panel6;
+        private Button btnimprimir;
+        private Button button3;
+        
+        private Button btnborrar;
+        private TextBox nombretextBox;
+        private Label label4;
+        private Label label6;
+        private DataGridView dgvGestor;
+        private Label label1;
+        private TextBox ltrabtextBox;
+        private Label label5;
+        private TextBox CargotextBox;
+        private Label label3;
+        private Label label2;
+        private MaskedTextBox maskedTextBox1;
+        private Label label8;
+        private TextBox SubtextBox;
+        private Label label7;
+        private Button btnguardardoc;
+        private MaskedTextBox cedulatextBox;
+        private Label label9;
+        private TextBox aserv;
+        private MaskedTextBox FechatextBox;
         private Panel MenuVertical;
         private Button button7;
         private Button button4;
@@ -553,34 +570,6 @@
         private Panel panel2;
         private Button button9;
         private Panel panel1;
-        private PictureBox pictureBox1;
-        private Panel panel6;
-        private Button button10;
-        private Button button3;
-        private Button button1;
-        private Button button2;
-        private TextBox textBox4;
-        private Label label4;
-        private Label label6;
-        private DataGridView dataGridView1;
-        private TextBox textBox1;
-        private Label label1;
-        private TextBox textBox5;
-        private Label label5;
-        private TextBox textBox3;
-        private Label label3;
-        private TextBox textBox2;
-        private Label label2;
-        private MaskedTextBox maskedTextBox1;
-        private Label label8;
-        private TextBox textBox6;
-        private Label label7;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column2;
-        private DataGridViewTextBoxColumn Column3;
-        private DataGridViewTextBoxColumn Column4;
-        private DataGridViewTextBoxColumn Column5;
-        private DataGridViewTextBoxColumn Column6;
-        private DataGridViewTextBoxColumn Column7;
+        private Class.gpanel gpanel1;
     }
 }

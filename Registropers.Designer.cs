@@ -29,67 +29,260 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registropers));
+            buttonx1 = new Button();
+            pictureBox2 = new PictureBox();
+            label1 = new Label();
+            textNombreP = new TextBox();
+            panel6 = new Panel();
+            textCargo = new ComboBox();
+            textGenero = new ComboBox();
+            textDvive = new TextBox();
+            buttonx2 = new Button();
+            label3 = new Label();
+            label8 = new Label();
+            textarea_trabajo = new TextBox();
+            label7 = new Label();
+            textCedula = new TextBox();
+            label5 = new Label();
+            label4 = new Label();
+            textApellido = new TextBox();
+            label2 = new Label();
+            label6 = new Label();
             MenuVertical = new Panel();
             button7 = new Button();
-            button1 = new Button();
+            button4 = new Button();
             panel5 = new Panel();
             panel9 = new Panel();
             button5 = new Button();
             panel4 = new Panel();
-            button4 = new Button();
+            button6 = new Button();
             panel3 = new Panel();
-            button3 = new Button();
+            button8 = new Button();
             panel2 = new Panel();
-            button2 = new Button();
+            button9 = new Button();
             panel1 = new Panel();
             pictureBox1 = new PictureBox();
-            button6 = new Button();
-            pictureBox2 = new PictureBox();
-            label1 = new Label();
-            textBox1 = new TextBox();
-            panel6 = new Panel();
-            button8 = new Button();
-            textBox2 = new TextBox();
-            label2 = new Label();
-            label4 = new Label();
-            textBox5 = new TextBox();
-            label5 = new Label();
-            label6 = new Label();
-            textBox6 = new TextBox();
-            label7 = new Label();
-            label8 = new Label();
-            textBox3 = new TextBox();
-            label3 = new Label();
-            comboBox1 = new ComboBox();
-            comboBox2 = new ComboBox();
-            MenuVertical.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            gpanel1 = new Class.gpanel();
+            dgvGestor = new DataGridView();
+            textTelefono = new MaskedTextBox();
+            label9 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel6.SuspendLayout();
+            MenuVertical.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            gpanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvGestor).BeginInit();
             SuspendLayout();
+            // 
+            // buttonx1
+            // 
+            buttonx1.Location = new Point(554, 219);
+            buttonx1.Name = "buttonx1";
+            buttonx1.Size = new Size(117, 49);
+            buttonx1.TabIndex = 5;
+            buttonx1.Text = "Guardar";
+            buttonx1.UseVisualStyleBackColor = true;
+            buttonx1.Click += buttonx1_Click;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(119, 0);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(296, 165);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 6;
+            pictureBox2.TabStop = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
+            label1.Location = new Point(16, 31);
+            label1.Name = "label1";
+            label1.Size = new Size(102, 31);
+            label1.TabIndex = 0;
+            label1.Text = "Nombre";
+            // 
+            // textNombreP
+            // 
+            textNombreP.Location = new Point(13, 66);
+            textNombreP.Name = "textNombreP";
+            textNombreP.Size = new Size(202, 27);
+            textNombreP.TabIndex = 0;
+            // 
+            // panel6
+            // 
+            panel6.BackColor = SystemColors.ControlLightLight;
+            panel6.Controls.Add(label9);
+            panel6.Controls.Add(textTelefono);
+            panel6.Controls.Add(textCargo);
+            panel6.Controls.Add(textGenero);
+            panel6.Controls.Add(textDvive);
+            panel6.Controls.Add(buttonx2);
+            panel6.Controls.Add(label3);
+            panel6.Controls.Add(buttonx1);
+            panel6.Controls.Add(label8);
+            panel6.Controls.Add(textarea_trabajo);
+            panel6.Controls.Add(label7);
+            panel6.Controls.Add(textCedula);
+            panel6.Controls.Add(label5);
+            panel6.Controls.Add(label4);
+            panel6.Controls.Add(textApellido);
+            panel6.Controls.Add(label2);
+            panel6.Controls.Add(textNombreP);
+            panel6.Controls.Add(label1);
+            panel6.Location = new Point(103, 176);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(874, 283);
+            panel6.TabIndex = 7;
+            // 
+            // textCargo
+            // 
+            textCargo.FormattingEnabled = true;
+            textCargo.Items.AddRange(new object[] { "ANALISTA RRHHH", "SECRETARIA EJECUTIVA ", "DIGITADOR", "SECRETARIA", "CHOFER" });
+            textCargo.Location = new Point(234, 65);
+            textCargo.Name = "textCargo";
+            textCargo.Size = new Size(202, 28);
+            textCargo.TabIndex = 20;
+            // 
+            // textGenero
+            // 
+            textGenero.FormattingEnabled = true;
+            textGenero.Location = new Point(465, 162);
+            textGenero.Name = "textGenero";
+            textGenero.Size = new Size(99, 28);
+            textGenero.TabIndex = 19;
+            // 
+            // textDvive
+            // 
+            textDvive.Location = new Point(472, 66);
+            textDvive.Name = "textDvive";
+            textDvive.Size = new Size(295, 27);
+            textDvive.TabIndex = 15;
+            // 
+            // buttonx2
+            // 
+            buttonx2.Location = new Point(705, 219);
+            buttonx2.Name = "buttonx2";
+            buttonx2.Size = new Size(117, 49);
+            buttonx2.TabIndex = 8;
+            buttonx2.Text = "Cancelar";
+            buttonx2.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
+            label3.Location = new Point(472, 31);
+            label3.Name = "label3";
+            label3.Size = new Size(116, 31);
+            label3.TabIndex = 16;
+            label3.Text = "Direccion";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
+            label8.Location = new Point(234, 31);
+            label8.Name = "label8";
+            label8.Size = new Size(77, 31);
+            label8.TabIndex = 14;
+            label8.Text = "Cargo";
+            // 
+            // textarea_trabajo
+            // 
+            textarea_trabajo.Location = new Point(587, 163);
+            textarea_trabajo.Name = "textarea_trabajo";
+            textarea_trabajo.Size = new Size(214, 27);
+            textarea_trabajo.TabIndex = 11;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
+            label7.Location = new Point(587, 122);
+            label7.Name = "label7";
+            label7.Size = new Size(180, 31);
+            label7.TabIndex = 12;
+            label7.Text = "Area de Trabajo";
+            // 
+            // textCedula
+            // 
+            textCedula.Location = new Point(234, 162);
+            textCedula.Name = "textCedula";
+            textCedula.Size = new Size(214, 27);
+            textCedula.TabIndex = 9;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
+            label5.Location = new Point(234, 122);
+            label5.Name = "label5";
+            label5.Size = new Size(87, 31);
+            label5.TabIndex = 10;
+            label5.Text = "Cedula";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
+            label4.Location = new Point(465, 122);
+            label4.Name = "label4";
+            label4.Size = new Size(91, 31);
+            label4.TabIndex = 6;
+            label4.Text = "Genero";
+            // 
+            // textApellido
+            // 
+            textApellido.Location = new Point(13, 162);
+            textApellido.Name = "textApellido";
+            textApellido.Size = new Size(202, 27);
+            textApellido.TabIndex = 1;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
+            label2.Location = new Point(13, 128);
+            label2.Name = "label2";
+            label2.Size = new Size(105, 31);
+            label2.TabIndex = 2;
+            label2.Text = "Apellido";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Showcard Gothic", 28.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label6.Location = new Point(421, 92);
+            label6.Name = "label6";
+            label6.Size = new Size(560, 59);
+            label6.TabIndex = 9;
+            label6.Text = "Registro de Personal";
             // 
             // MenuVertical
             // 
             MenuVertical.BackColor = Color.FromArgb(139, 195, 140);
             MenuVertical.Controls.Add(button7);
-            MenuVertical.Controls.Add(button1);
+            MenuVertical.Controls.Add(button4);
             MenuVertical.Controls.Add(panel5);
             MenuVertical.Controls.Add(panel9);
             MenuVertical.Controls.Add(button5);
             MenuVertical.Controls.Add(panel4);
-            MenuVertical.Controls.Add(button4);
+            MenuVertical.Controls.Add(button6);
             MenuVertical.Controls.Add(panel3);
-            MenuVertical.Controls.Add(button3);
+            MenuVertical.Controls.Add(button8);
             MenuVertical.Controls.Add(panel2);
-            MenuVertical.Controls.Add(button2);
+            MenuVertical.Controls.Add(button9);
             MenuVertical.Controls.Add(panel1);
             MenuVertical.Controls.Add(pictureBox1);
             MenuVertical.Dock = DockStyle.Left;
             MenuVertical.Location = new Point(0, 0);
             MenuVertical.Margin = new Padding(4, 5, 4, 5);
             MenuVertical.Name = "MenuVertical";
-            MenuVertical.Size = new Size(70, 693);
-            MenuVertical.TabIndex = 3;
+            MenuVertical.Size = new Size(70, 691);
+            MenuVertical.TabIndex = 20;
             // 
             // button7
             // 
@@ -104,26 +297,28 @@
             button7.Location = new Point(6, 438);
             button7.Margin = new Padding(4, 5, 4, 5);
             button7.Name = "button7";
-            button7.Size = new Size(60, 49);
+            button7.Size = new Size(64, 49);
             button7.TabIndex = 23;
             button7.UseVisualStyleBackColor = false;
+            button7.Click += button7_Click;
             // 
-            // button1
+            // button4
             // 
-            button1.BackColor = Color.FromArgb(0, 64, 0);
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 80, 200);
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.White;
-            button1.Image = (Image)resources.GetObject("button1.Image");
-            button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(6, 382);
-            button1.Margin = new Padding(4, 5, 4, 5);
-            button1.Name = "button1";
-            button1.Size = new Size(59, 49);
-            button1.TabIndex = 21;
-            button1.UseVisualStyleBackColor = false;
+            button4.BackColor = Color.FromArgb(0, 64, 0);
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 80, 200);
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button4.ForeColor = Color.White;
+            button4.Image = (Image)resources.GetObject("button4.Image");
+            button4.ImageAlign = ContentAlignment.MiddleLeft;
+            button4.Location = new Point(6, 382);
+            button4.Margin = new Padding(4, 5, 4, 5);
+            button4.Name = "button4";
+            button4.Size = new Size(64, 49);
+            button4.TabIndex = 21;
+            button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // panel5
             // 
@@ -153,12 +348,13 @@
             button5.ForeColor = Color.White;
             button5.Image = (Image)resources.GetObject("button5.Image");
             button5.ImageAlign = ContentAlignment.MiddleLeft;
-            button5.Location = new Point(4, 206);
+            button5.Location = new Point(5, 206);
             button5.Margin = new Padding(4, 5, 4, 5);
             button5.Name = "button5";
-            button5.Size = new Size(61, 49);
+            button5.Size = new Size(66, 49);
             button5.TabIndex = 9;
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // panel4
             // 
@@ -169,22 +365,23 @@
             panel4.Size = new Size(7, 49);
             panel4.TabIndex = 8;
             // 
-            // button4
+            // button6
             // 
-            button4.BackColor = Color.FromArgb(0, 64, 0);
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 80, 200);
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button4.ForeColor = Color.White;
-            button4.Image = (Image)resources.GetObject("button4.Image");
-            button4.ImageAlign = ContentAlignment.MiddleLeft;
-            button4.Location = new Point(5, 324);
-            button4.Margin = new Padding(4, 5, 4, 5);
-            button4.Name = "button4";
-            button4.Size = new Size(61, 49);
-            button4.TabIndex = 7;
-            button4.UseVisualStyleBackColor = false;
+            button6.BackColor = Color.FromArgb(0, 64, 0);
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 80, 200);
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button6.ForeColor = Color.White;
+            button6.Image = (Image)resources.GetObject("button6.Image");
+            button6.ImageAlign = ContentAlignment.MiddleLeft;
+            button6.Location = new Point(5, 324);
+            button6.Margin = new Padding(4, 5, 4, 5);
+            button6.Name = "button6";
+            button6.Size = new Size(65, 49);
+            button6.TabIndex = 7;
+            button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // panel3
             // 
@@ -195,22 +392,23 @@
             panel3.Size = new Size(7, 49);
             panel3.TabIndex = 6;
             // 
-            // button3
+            // button8
             // 
-            button3.BackColor = Color.FromArgb(0, 64, 0);
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 80, 200);
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button3.ForeColor = Color.White;
-            button3.Image = (Image)resources.GetObject("button3.Image");
-            button3.ImageAlign = ContentAlignment.MiddleLeft;
-            button3.Location = new Point(5, 139);
-            button3.Margin = new Padding(4, 5, 4, 5);
-            button3.Name = "button3";
-            button3.Size = new Size(61, 49);
-            button3.TabIndex = 5;
-            button3.UseVisualStyleBackColor = false;
+            button8.BackColor = Color.FromArgb(0, 64, 0);
+            button8.FlatAppearance.BorderSize = 0;
+            button8.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 80, 200);
+            button8.FlatStyle = FlatStyle.Flat;
+            button8.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button8.ForeColor = Color.White;
+            button8.Image = (Image)resources.GetObject("button8.Image");
+            button8.ImageAlign = ContentAlignment.MiddleLeft;
+            button8.Location = new Point(5, 139);
+            button8.Margin = new Padding(4, 5, 4, 5);
+            button8.Name = "button8";
+            button8.Size = new Size(65, 49);
+            button8.TabIndex = 5;
+            button8.UseVisualStyleBackColor = false;
+            button8.Click += button8_Click;
             // 
             // panel2
             // 
@@ -221,22 +419,23 @@
             panel2.Size = new Size(7, 49);
             panel2.TabIndex = 4;
             // 
-            // button2
+            // button9
             // 
-            button2.BackColor = Color.FromArgb(0, 64, 0);
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 80, 200);
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.White;
-            button2.Image = (Image)resources.GetObject("button2.Image");
-            button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(5, 265);
-            button2.Margin = new Padding(4, 5, 4, 5);
-            button2.Name = "button2";
-            button2.Size = new Size(61, 49);
-            button2.TabIndex = 3;
-            button2.UseVisualStyleBackColor = false;
+            button9.BackColor = Color.FromArgb(0, 64, 0);
+            button9.FlatAppearance.BorderSize = 0;
+            button9.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 80, 200);
+            button9.FlatStyle = FlatStyle.Flat;
+            button9.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button9.ForeColor = Color.White;
+            button9.Image = (Image)resources.GetObject("button9.Image");
+            button9.ImageAlign = ContentAlignment.MiddleLeft;
+            button9.Location = new Point(5, 265);
+            button9.Margin = new Padding(4, 5, 4, 5);
+            button9.Name = "button9";
+            button9.Size = new Size(61, 49);
+            button9.TabIndex = 3;
+            button9.UseVisualStyleBackColor = false;
+            button9.Click += button9_Click;
             // 
             // panel1
             // 
@@ -258,243 +457,106 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
-            // button6
+            // gpanel1
             // 
-            button6.Location = new Point(210, 309);
-            button6.Name = "button6";
-            button6.Size = new Size(117, 49);
-            button6.TabIndex = 5;
-            button6.Text = "Guardar";
-            button6.UseVisualStyleBackColor = true;
+            gpanel1.ColorBottom = Color.Cornsilk;
+            gpanel1.ColorTop = Color.LightGreen;
+            gpanel1.Controls.Add(dgvGestor);
+            gpanel1.Controls.Add(panel6);
+            gpanel1.Controls.Add(label6);
+            gpanel1.Controls.Add(pictureBox2);
+            gpanel1.Dock = DockStyle.Fill;
+            gpanel1.Location = new Point(0, 0);
+            gpanel1.Name = "gpanel1";
+            gpanel1.Size = new Size(1023, 691);
+            gpanel1.TabIndex = 21;
             // 
-            // pictureBox2
+            // dgvGestor
             // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(176, 23);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(296, 165);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 6;
-            pictureBox2.TabStop = false;
+            dgvGestor.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvGestor.Location = new Point(103, 475);
+            dgvGestor.Name = "dgvGestor";
+            dgvGestor.RowHeadersWidth = 51;
+            dgvGestor.Size = new Size(874, 185);
+            dgvGestor.TabIndex = 10;
             // 
-            // label1
+            // textTelefono
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            label1.Location = new Point(41, 40);
-            label1.Name = "label1";
-            label1.Size = new Size(76, 23);
-            label1.TabIndex = 0;
-            label1.Text = "Nombre";
+            textTelefono.Location = new Point(16, 244);
+            textTelefono.Mask = "(999)000-0000";
+            textTelefono.Name = "textTelefono";
+            textTelefono.Size = new Size(202, 27);
+            textTelefono.TabIndex = 21;
             // 
-            // textBox1
+            // label9
             // 
-            textBox1.Location = new Point(41, 66);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(202, 27);
-            textBox1.TabIndex = 0;
-            // 
-            // panel6
-            // 
-            panel6.Controls.Add(comboBox2);
-            panel6.Controls.Add(comboBox1);
-            panel6.Controls.Add(textBox3);
-            panel6.Controls.Add(button8);
-            panel6.Controls.Add(label3);
-            panel6.Controls.Add(button6);
-            panel6.Controls.Add(label8);
-            panel6.Controls.Add(textBox6);
-            panel6.Controls.Add(label7);
-            panel6.Controls.Add(textBox5);
-            panel6.Controls.Add(label5);
-            panel6.Controls.Add(label4);
-            panel6.Controls.Add(textBox2);
-            panel6.Controls.Add(label2);
-            panel6.Controls.Add(textBox1);
-            panel6.Controls.Add(label1);
-            panel6.Location = new Point(176, 221);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(881, 375);
-            panel6.TabIndex = 7;
-            // 
-            // button8
-            // 
-            button8.Location = new Point(361, 309);
-            button8.Name = "button8";
-            button8.Size = new Size(117, 49);
-            button8.TabIndex = 8;
-            button8.Text = "Cancelar";
-            button8.UseVisualStyleBackColor = true;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(41, 151);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(202, 27);
-            textBox2.TabIndex = 1;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            label2.Location = new Point(41, 125);
-            label2.Name = "label2";
-            label2.Size = new Size(78, 23);
-            label2.TabIndex = 2;
-            label2.Text = "Apellido";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            label4.Location = new Point(41, 209);
-            label4.Name = "label4";
-            label4.Size = new Size(48, 23);
-            label4.TabIndex = 6;
-            label4.Text = "Sexo";
-            // 
-            // textBox5
-            // 
-            textBox5.Location = new Point(294, 151);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(214, 27);
-            textBox5.TabIndex = 9;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            label5.Location = new Point(294, 125);
-            label5.Name = "label5";
-            label5.Size = new Size(65, 23);
-            label5.TabIndex = 10;
-            label5.Text = "Cedula";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Showcard Gothic", 28.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.Location = new Point(497, 46);
-            label6.Name = "label6";
-            label6.Size = new Size(560, 59);
-            label6.TabIndex = 9;
-            label6.Text = "Registro de Personal";
-            // 
-            // textBox6
-            // 
-            textBox6.Location = new Point(294, 235);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(214, 27);
-            textBox6.TabIndex = 11;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            label7.Location = new Point(294, 209);
-            label7.Name = "label7";
-            label7.Size = new Size(137, 23);
-            label7.TabIndex = 12;
-            label7.Text = "Area de Trabajo";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            label8.Location = new Point(294, 30);
-            label8.Name = "label8";
-            label8.Size = new Size(58, 23);
-            label8.TabIndex = 14;
-            label8.Text = "Cargo";
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(555, 56);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(295, 27);
-            textBox3.TabIndex = 15;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            label3.Location = new Point(555, 30);
-            label3.Name = "label3";
-            label3.Size = new Size(85, 23);
-            label3.TabIndex = 16;
-            label3.Text = "Direccion";
-            // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(41, 249);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(202, 28);
-            comboBox1.TabIndex = 19;
-            // 
-            // comboBox2
-            // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "ANALISTA RRHHH", "SECRETARIA EJECUTIVA ", "DIGITADOR", "SECRETARIA", "CHOFER" });
-            comboBox2.Location = new Point(294, 65);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(202, 28);
-            comboBox2.TabIndex = 20;
+            label9.AutoSize = true;
+            label9.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
+            label9.Location = new Point(16, 206);
+            label9.Name = "label9";
+            label9.Size = new Size(107, 31);
+            label9.TabIndex = 22;
+            label9.Text = "Telefono";
             // 
             // Registropers
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1207, 693);
-            Controls.Add(label6);
-            Controls.Add(panel6);
-            Controls.Add(pictureBox2);
+            ClientSize = new Size(1023, 691);
             Controls.Add(MenuVertical);
+            Controls.Add(gpanel1);
+            MaximumSize = new Size(1041, 739);
+            MinimumSize = new Size(1041, 738);
             Name = "Registropers";
             Text = "Registropers";
-            MenuVertical.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel6.ResumeLayout(false);
             panel6.PerformLayout();
+            MenuVertical.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            gpanel1.ResumeLayout(false);
+            gpanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvGestor).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
+        private Button buttonx1;
+        private PictureBox pictureBox2;
+        private Label label1;
+        private TextBox textNombreP;
+        private Panel panel6;
+        private Button buttonx2;
+        private TextBox textCedula;
+        private Label label5;
+        private Label label4;
+        private TextBox textApellido;
+        private Label label2;
+        private Label label6;
+        private TextBox textDvive;
+        private Label label3;
+        private Label label8;
+        private ComboBox textCargo;
+        private ComboBox textGenero;
         private Panel MenuVertical;
         private Button button7;
-        private Button button1;
+        private Button button4;
         private Panel panel5;
         private Panel panel9;
         private Button button5;
         private Panel panel4;
-        private Button button4;
+        private Button button6;
         private Panel panel3;
-        private Button button3;
+        private Button button8;
         private Panel panel2;
-        private Button button2;
+        private Button button9;
         private Panel panel1;
         private PictureBox pictureBox1;
-        private Button button6;
-        private PictureBox pictureBox2;
-        private Label label1;
-        private TextBox textBox1;
-        private Panel panel6;
-        private Button button8;
-        private TextBox textBox5;
-        private Label label5;
-        private Label label4;
-        private TextBox textBox2;
-        private Label label2;
-        private Label label6;
-        private TextBox textBox3;
-        private Label label3;
-        private Label label8;
-        private TextBox textBox6;
+        private Class.gpanel gpanel1;
+        private DataGridView dgvGestor;
+        private TextBox textarea_trabajo;
         private Label label7;
-        private ComboBox comboBox2;
-        private ComboBox comboBox1;
+        private MaskedTextBox textTelefono;
+        private Label label9;
     }
 }

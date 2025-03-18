@@ -30,16 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Lista_de_compra));
             label1 = new Label();
-            textBox1 = new TextBox();
-            comboBox1 = new ComboBox();
-            dataGridView1 = new DataGridView();
-            textBox2 = new TextBox();
+            textnombart = new TextBox();
+            txtcateg = new ComboBox();
             label2 = new Label();
             label3 = new Label();
-            textBox4 = new TextBox();
+            textnomact = new TextBox();
             label4 = new Label();
-            button1 = new Button();
-            button2 = new Button();
+            guar = new Button();
+            borr = new Button();
             button3 = new Button();
             MenuVertical = new Panel();
             button7 = new Button();
@@ -57,17 +55,17 @@
             pictureBox1 = new PictureBox();
             dateTimePicker1 = new DateTimePicker();
             panel6 = new Panel();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewTextBoxColumn();
-            label6 = new Label();
+            Textcantidad1 = new TextBox();
+            impr = new Button();
             label5 = new Label();
-            textBox3 = new TextBox();
-            button10 = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            textlugd = new TextBox();
+            label6 = new Label();
+            dgvGestor = new DataGridView();
+            gpanel1 = new Class.gpanel();
             MenuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvGestor).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -80,38 +78,21 @@
             label1.TabIndex = 0;
             label1.Text = "Nombre de Articulo";
             // 
-            // textBox1
+            // textnombart
             // 
-            textBox1.Location = new Point(13, 252);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(178, 27);
-            textBox1.TabIndex = 1;
+            textnombart.Location = new Point(13, 252);
+            textnombart.Name = "textnombart";
+            textnombart.Size = new Size(178, 27);
+            textnombart.TabIndex = 1;
             // 
-            // comboBox1
+            // txtcateg
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "FDA", "UND", "LB" });
-            comboBox1.Location = new Point(328, 252);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(151, 28);
-            comboBox1.TabIndex = 2;
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3 });
-            dataGridView1.Location = new Point(77, 487);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(691, 188);
-            dataGridView1.TabIndex = 3;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(203, 252);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(91, 27);
-            textBox2.TabIndex = 5;
+            txtcateg.FormattingEnabled = true;
+            txtcateg.Items.AddRange(new object[] { "FDA", "UND", "LB" });
+            txtcateg.Location = new Point(328, 252);
+            txtcateg.Name = "txtcateg";
+            txtcateg.Size = new Size(151, 28);
+            txtcateg.TabIndex = 2;
             // 
             // label2
             // 
@@ -133,12 +114,12 @@
             label3.TabIndex = 6;
             label3.Text = "Categoria";
             // 
-            // textBox4
+            // textnomact
             // 
-            textBox4.Location = new Point(15, 94);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(416, 27);
-            textBox4.TabIndex = 9;
+            textnomact.Location = new Point(15, 94);
+            textnomact.Name = "textnomact";
+            textnomact.Size = new Size(416, 27);
+            textnomact.TabIndex = 9;
             // 
             // label4
             // 
@@ -150,27 +131,28 @@
             label4.TabIndex = 8;
             label4.Text = "Nombre de la actividad";
             // 
-            // button1
+            // guar
             // 
-            button1.Location = new Point(13, 344);
-            button1.Name = "button1";
-            button1.Size = new Size(111, 55);
-            button1.TabIndex = 10;
-            button1.Text = "Guardar";
-            button1.UseVisualStyleBackColor = true;
+            guar.Location = new Point(13, 302);
+            guar.Name = "guar";
+            guar.Size = new Size(111, 55);
+            guar.TabIndex = 10;
+            guar.Text = "Guardar";
+            guar.UseVisualStyleBackColor = true;
+            guar.Click += guar_Click;
             // 
-            // button2
+            // borr
             // 
-            button2.Location = new Point(130, 341);
-            button2.Name = "button2";
-            button2.Size = new Size(111, 55);
-            button2.TabIndex = 11;
-            button2.Text = "Borrar";
-            button2.UseVisualStyleBackColor = true;
+            borr.Location = new Point(364, 302);
+            borr.Name = "borr";
+            borr.Size = new Size(111, 55);
+            borr.TabIndex = 11;
+            borr.Text = "Borrar";
+            borr.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            button3.Location = new Point(247, 341);
+            button3.Location = new Point(247, 302);
             button3.Name = "button3";
             button3.Size = new Size(111, 55);
             button3.TabIndex = 12;
@@ -197,7 +179,7 @@
             MenuVertical.Location = new Point(0, 0);
             MenuVertical.Margin = new Padding(4, 5, 4, 5);
             MenuVertical.Name = "MenuVertical";
-            MenuVertical.Size = new Size(70, 687);
+            MenuVertical.Size = new Size(70, 712);
             MenuVertical.TabIndex = 13;
             // 
             // button7
@@ -216,6 +198,7 @@
             button7.Size = new Size(60, 49);
             button7.TabIndex = 23;
             button7.UseVisualStyleBackColor = false;
+            button7.Click += button7_Click;
             // 
             // button4
             // 
@@ -233,6 +216,7 @@
             button4.Size = new Size(59, 49);
             button4.TabIndex = 21;
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // panel5
             // 
@@ -268,6 +252,7 @@
             button5.Size = new Size(61, 49);
             button5.TabIndex = 9;
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // panel4
             // 
@@ -294,6 +279,7 @@
             button6.Size = new Size(61, 49);
             button6.TabIndex = 7;
             button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // panel3
             // 
@@ -320,6 +306,7 @@
             button8.Size = new Size(61, 49);
             button8.TabIndex = 5;
             button8.UseVisualStyleBackColor = false;
+            button8.Click += button8_Click;
             // 
             // panel2
             // 
@@ -346,6 +333,7 @@
             button9.Size = new Size(61, 49);
             button9.TabIndex = 3;
             button9.UseVisualStyleBackColor = false;
+            button9.Click += button9_Click;
             // 
             // panel1
             // 
@@ -369,54 +357,67 @@
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(408, 21);
+            dateTimePicker1.Location = new Point(378, 21);
             dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(250, 27);
+            dateTimePicker1.Size = new Size(287, 27);
             dateTimePicker1.TabIndex = 14;
             // 
             // panel6
             // 
-            panel6.Controls.Add(button10);
+            panel6.BackColor = Color.White;
+            panel6.Controls.Add(Textcantidad1);
+            panel6.Controls.Add(impr);
             panel6.Controls.Add(label5);
-            panel6.Controls.Add(textBox3);
+            panel6.Controls.Add(textlugd);
             panel6.Controls.Add(label6);
             panel6.Controls.Add(button3);
             panel6.Controls.Add(dateTimePicker1);
-            panel6.Controls.Add(button1);
-            panel6.Controls.Add(button2);
-            panel6.Controls.Add(textBox4);
-            panel6.Controls.Add(comboBox1);
+            panel6.Controls.Add(guar);
+            panel6.Controls.Add(borr);
+            panel6.Controls.Add(textnomact);
+            panel6.Controls.Add(txtcateg);
             panel6.Controls.Add(label4);
             panel6.Controls.Add(label1);
             panel6.Controls.Add(label3);
-            panel6.Controls.Add(textBox1);
-            panel6.Controls.Add(textBox2);
+            panel6.Controls.Add(textnombart);
             panel6.Controls.Add(label2);
             panel6.Location = new Point(91, 32);
             panel6.Name = "panel6";
-            panel6.Size = new Size(691, 430);
+            panel6.Size = new Size(691, 377);
             panel6.TabIndex = 15;
             // 
-            // Column1
+            // Textcantidad1
             // 
-            Column1.HeaderText = "Cantidad";
-            Column1.MinimumWidth = 6;
-            Column1.Name = "Column1";
-            Column1.Width = 125;
+            Textcantidad1.Location = new Point(203, 252);
+            Textcantidad1.Name = "Textcantidad1";
+            Textcantidad1.Size = new Size(102, 27);
+            Textcantidad1.TabIndex = 19;
             // 
-            // Column2
+            // impr
             // 
-            Column2.HeaderText = "Articulo";
-            Column2.MinimumWidth = 6;
-            Column2.Name = "Column2";
-            Column2.Width = 125;
+            impr.Location = new Point(130, 302);
+            impr.Name = "impr";
+            impr.Size = new Size(111, 55);
+            impr.TabIndex = 18;
+            impr.Text = "Imprimir";
+            impr.UseVisualStyleBackColor = true;
             // 
-            // Column3
+            // label5
             // 
-            Column3.HeaderText = "Categoria";
-            Column3.MinimumWidth = 6;
-            Column3.Name = "Column3";
-            Column3.Width = 125;
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
+            label5.Location = new Point(13, 146);
+            label5.Name = "label5";
+            label5.Size = new Size(199, 23);
+            label5.TabIndex = 16;
+            label5.Text = "Lugar donde se compra";
+            // 
+            // textlugd
+            // 
+            textlugd.Location = new Point(13, 174);
+            textlugd.Name = "textlugd";
+            textlugd.Size = new Size(305, 27);
+            textlugd.TabIndex = 17;
             // 
             // label6
             // 
@@ -428,63 +429,54 @@
             label6.TabIndex = 15;
             label6.Text = "Listado de compra";
             // 
-            // label5
+            // dgvGestor
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            label5.Location = new Point(13, 148);
-            label5.Name = "label5";
-            label5.Size = new Size(199, 23);
-            label5.TabIndex = 16;
-            label5.Text = "Lugar donde se compra";
+            dgvGestor.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvGestor.Location = new Point(91, 415);
+            dgvGestor.Name = "dgvGestor";
+            dgvGestor.RowHeadersWidth = 51;
+            dgvGestor.Size = new Size(691, 260);
+            dgvGestor.TabIndex = 16;
             // 
-            // textBox3
+            // gpanel1
             // 
-            textBox3.Location = new Point(13, 174);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(305, 27);
-            textBox3.TabIndex = 17;
-            // 
-            // button10
-            // 
-            button10.Location = new Point(396, 341);
-            button10.Name = "button10";
-            button10.Size = new Size(111, 55);
-            button10.TabIndex = 18;
-            button10.Text = "Imprimir";
-            button10.UseVisualStyleBackColor = true;
+            gpanel1.ColorBottom = Color.Cornsilk;
+            gpanel1.ColorTop = Color.LightGreen;
+            gpanel1.Location = new Point(0, 0);
+            gpanel1.Name = "gpanel1";
+            gpanel1.Size = new Size(833, 709);
+            gpanel1.TabIndex = 20;
             // 
             // Lista_de_compra
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(828, 687);
+            ClientSize = new Size(828, 712);
+            Controls.Add(dgvGestor);
             Controls.Add(panel6);
             Controls.Add(MenuVertical);
-            Controls.Add(dataGridView1);
+            Controls.Add(gpanel1);
             Name = "Lista_de_compra";
             Text = "Lista_de_compra";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             MenuVertical.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel6.ResumeLayout(false);
             panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvGestor).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
         private Label label1;
-        private TextBox textBox1;
-        private ComboBox comboBox1;
-        private DataGridView dataGridView1;
-        private TextBox textBox2;
+        private TextBox textnombart;
+        private ComboBox txtcateg;
         private Label label2;
         private Label label3;
-        private TextBox textBox4;
+        private TextBox textnomact;
         private Label label4;
-        private Button button1;
-        private Button button2;
+        private Button guar;
+        private Button borr;
         private Button button3;
         private Panel MenuVertical;
         private Button button7;
@@ -502,12 +494,12 @@
         private PictureBox pictureBox1;
         private DateTimePicker dateTimePicker1;
         private Panel panel6;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column2;
-        private DataGridViewTextBoxColumn Column3;
         private Label label6;
-        private Button button10;
+        private Button impr;
         private Label label5;
-        private TextBox textBox3;
+        private TextBox textlugd;
+        private DataGridView dgvGestor;
+        private TextBox Textcantidad1;
+        private Class.gpanel gpanel1;
     }
 }

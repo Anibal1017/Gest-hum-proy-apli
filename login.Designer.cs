@@ -82,6 +82,7 @@
             // 
             textBox2.Location = new Point(135, 252);
             textBox2.Name = "textBox2";
+            textBox2.PasswordChar = '*';
             textBox2.Size = new Size(212, 27);
             textBox2.TabIndex = 3;
             // 
@@ -96,6 +97,7 @@
             button1.TabIndex = 5;
             button1.Text = "Entrar";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // button2
             // 

@@ -1,3 +1,5 @@
+using gestor_de_rh01.BD;
+
 namespace gestor_de_rh01
 {
     internal static class Program
